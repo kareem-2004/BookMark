@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark</title>
+  <link rel="icon" href="./Bookmark-PNG-HD.png">
+  <!--------------------Google Fonts------------------>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family
+  =Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+  <!--------------------Font Awesome------------------>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="
+  sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" 
+  referrerpolicy="no-referrer"/>
+  <!--------------------Boot Strap------------------>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <section>
+    <div class="text-center pt-5">
+      <h1>Bookmarker</h1>
+      <div class="dotted-line"></div>
+    </div>
+      <div class="banner d-flex align-items-center justify-content-center color-text fw-bold">
+        <i class="fa-solid fa-bookmark fs-4"></i>
+        <h2 class="text mx-3 mb-0 ">Bookmark your favorite sites</h2> 
+        <i class="fa-solid fa-bookmark fs-4"></i>
+      </div>
+      <div class="container">
+        <div class="mb-3">
+          <label for="name" class="form-label fw-bold"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Bookmark Name">
+        </div>
+        <div class="mb-3">
+          <label for="url" class="form-label fw-bold"><i class="fa-solid fa-link"></i> Site URL</label>
+          <input type="url" class="form-control" id="url" placeholder="Website URL">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-danger px-5" onclick="getvalues(); checkInputEmpty() ">Submit</button>
+        </div>
+      </div>
+      <div class="dotted-line"></div>
+      <table class="table text-center mt-5 container">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="demo"></tbody>
+      </table>
+  </section>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

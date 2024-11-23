@@ -1,0 +1,29 @@
+body{
+background-color:#F7ECDE ;
+}
+::selection{
+background-color: #FEC260;
+color: #FFFFFF;
+}
+.dotted-line {
+border-top: 2px dotted black; 
+width: 85%;                  
+margin: 0 auto;              
+margin-top: 2rem;            
+margin-bottom: 2rem;         
+}
+.form-control:focus{
+border-color: #FEC260;
+box-shadow: none;
+}
+.color-text {
+background: linear-gradient(to right,#3EA55B,#B2AC49);
+color: transparent;
+background-clip: text;
+}
+h1{
+font-family: "Pacifico", cursive;
+font-weight: 500;
+font-style: normal;
+}
+  
